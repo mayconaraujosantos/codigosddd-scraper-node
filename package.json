@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "lefthook install",
     "dev": "cross-env NODE_ENV=development nodemon -r tsconfig-paths/register --exec ts-node ./src/index.ts --files",
     "start": "cross-env NODE_ENV=production node ./build/src/index.js",
     "build": "tsc && tsc-alias",
@@ -23,6 +24,8 @@
     "swagger-ui-express": "^5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@types/cors": "^2",
     "@types/express": "^4",
     "@types/jest": "^29",
