@@ -1,11 +1,11 @@
-import express from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
+import dotenv from 'dotenv';
+import express from 'express';
 
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from '../apidoc.json';
 
-import routes from '@/routes/index';
+import routes from '@/presentation/routes/index';
 
 dotenv.config();
 
